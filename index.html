@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySpoty</title>
+
+    <style>
+        /* */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(214, 179, 243);
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/fondo_pagina.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 62vh;
+            color: white; /* Color texto blanco */
+
+        }
+        .container1{
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+        .container3{
+            display: flex;
+            text-align: center;
+        
+        }
+        .imagenes{
+            width: 120px;
+            height: 120px;
+        }
+        .titulo{
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        .left{ 
+            display: flex; /* sirve para diseñar y organizar la disposición del elmemto*/
+            place-items: center; /*Texto que se vea de medio de arriba y abajo */
+            margin-left:7%; /* Margen a la izquierda de un 5%*/
+            font-size: 2em; /* Para agrandar el texto*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div>
+                <h1>The Weeknd</h1> <!--Titulo del cantante-->
+            </div>
+        </div>
+
+        <div class="right"> 
+            <img src="./img/fondo_weekend.png">             
+        </div>
+    </div>
+
+
+
+    <div class="container1">
+        <div>
+            <br>
+            <h2 class="titulo">Sobre The Weeknd</h2>
+            <br>
+        </div>
+
+        <div>
+            <p>
+                <b>Abel Makkonen Tesfaye</b>, conocido artísticamente como <b><em>The Weeknd</em></b>, es uno de los <b>artistas más influyentes del pop contemporáneo</b>.
+                Nacido en <b>Toronto en 1990</b>, comenzó su carrera en <em>2009</em> publicando música de forma anónima en <em>YouTube</em>.
+                En <em>2011</em> lanzó <b>tres mixtapes</b> que redefinieron el <em>R&B alternativo</em>: <b><em>House of Balloons</em></b>, <b><em>Thursday</em></b> y <b><em>Echoes of Silence</em></b>, más tarde recopilados en <b><em>Trilogy (2012)</em></b>.
+                Su <b>estilo oscuro, introspectivo y emocional</b> lo convirtió en un <b>fenómeno global</b>.
+            </p>
+
+            <br>
+
+            <p>
+                En <em>2013</em> debutó con <b><em>Kiss Land</em></b>, seguido por el exitoso <b><em>Beauty Behind the Madness (2015)</em></b>, que incluyó los hits <em>Can’t Feel My Face</em> y <em>The Hills</em>.
+                Con <b><em>Starboy (2016)</em></b>, en colaboración con <em>Daft Punk</em>, consolidó su estatus como <b>superestrella internacional</b>.
+                En <em>2020</em>, <b><em>After Hours</em></b> mostró su faceta más <em>cinematográfica y melancólica</em>, mientras que <b><em>Dawn FM (2022)</em></b> exploró el <em>synth-pop</em> con una <em>estética retro-futurista</em>.
+                En <em>2025</em>, <b><em>The Weeknd</em></b> sorprendió de nuevo con su disco <b><em>Hurry Up Tomorrow</em></b>.
+            </p>
+            <br>
+        </div>
+
+        <div class="container3">
+            <div>
+                <img class="imagenes" src="./img/icono_de_discografia.png"> 
+                <br><a href="./discografia/discografia.html">Discografia</a>
+            </div>
+
+            <div>
+                <img class="imagenes" src="./img/icono_de_formulario.png">
+                <br><a href="./discografia/formulario.html">Formulario</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
