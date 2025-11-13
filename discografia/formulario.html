@@ -4,8 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+        <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../img/logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(152, 128, 172);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: #170218; /* color de fondo*/
+            padding: 10px 0; /* padding es para el espacio entre el header y el contenido*/
+        }
+
+        nav {
+            display: flex; /* Display fles es para organizar los elementos en una fila*/
+            justify-content: center; /* Justificación centrada*/
+            gap: 25px; /* gap es para el espacio entre los elementos*/
+        }
+
+        nav a {
+            color: white; /* color de texto*/
+            text-decoration: none; /* Sin underline*/
+            font-weight: 500;   /* peso del texto*/
+            font-size: 1rem;    /* tamaño del texto*/
+            display: flex;      /* display fles es para organizar los elementos en una fila*/
+            align-items: center;    /* Alineación centrada*/
+            gap: 8px;           /* gap es para el espacio entre los elementos*/
+            background-color: #4C1560;   /* color de fondo*/
+            padding: 10px 18px;         /* padding es para el espacio entre el header y el contenido*/
+            border-radius: 8px; /*Contorno el borde de la imagen*/
+            transition: all 0.3s ease;   /* transición de color*/
+        }
+
+        nav a:hover {
+            background-color: #311f5c;   /* color de fondo*/
+            transform: scale(1.05);      /* Transformación*/
+        }
     
+        .container{
+            text-align: center; /* centro del texto*/
+            justify-content: center;
+            align-items: center;
+            margin-right: 10%;
+            margin-left: 10%;
+
+        }
+        .container2{
+            margin-left: 27%;
+        }
+ 
+        .imagenes{
+            width: 300px;
+            height: 300px;    
+            box-shadow: 0 0 10px #8c14b1, 0 0 20px #5c2d99;
+
+        }
+
+        .footer-section{
+            background-color: black; /*Color de fondo del footer*/
+            color: white; /*Color de texto del footer*/
+            text-align: center; /*Alineación del texto del footer*/
+        }
+        footer{
+            padding: 3% 3% 3% 3%; /*Margen del footer*/
+            margin-top: 1%;    /*Margen del footer*/
+        }
+
+        .footer-logo {
+            width: 100px; /*Ancho del logo del footer*/
+        }
+
+        .footer-logo:hover {
+            transform: scale(1.1); /*Transformación del logo del footer*/
+            
+        }
+        .footer-copy {
+            color: #777; /*Color de texto del footer*/
+            font-size: 0.9rem; /*Tamaño del texto del footer*/
+            margin-top: 10px; /*Margen del texto del footer*/
+        }
+         /* Contenedor del formulario: centrado, con fondo y sombra */
+        .form-container {
+            max-width: 500px;                 /* ancho máximo */
+            background-color: #1c1c1c;        /* fondo gris oscuro */
+            margin: 50px auto;                /* centrado vertical y horizontal */
+            padding: 30px;                    /* espacio interior */
+            border-radius: 12px;              /* bordes redondeados */
+            box-shadow: 0 0 15px rgba(255, 0, 80, 0.3); /* sombra rojiza */
+        }
+
+        /* Contenedor del formulario */
+        .form-container {
+            max-width: 500px;
+            background-color: #3a2554;  /* morado medio */
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(172, 94, 255, 0.4); /* brillo morado */
+        }
+
+        /* Título */
+        h2 {
+            text-align: center;
+            color: #c77dff; /* morado claro */
+        }
+
+        /* Etiquetas */
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #e8d9ff;
+        }
+
+        /* Campos del formulario */
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: none;
+            background-color: #4a2f6b; /* morado suave */
+            color: white;
+        }
+
+ 
+
+        /* Botón de enviar */
+        button {
+            width: 100%;
+            margin-top: 20px; 
+            padding: 12px;
+            background-color: #706085; /* morado vibrante */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+
+        }
+
+    
+
+    </style>
+</head>
+
+<body>
+    <header><!--Formato del header-->
+        <nav><!--Formato del navegador-->
+            <!-- A hreef se usa para que el navegador navegue a la página enlazada -->
+            <div>
+                <a href="../index.html"> <!--Enlace al index-->
+                    <i class="fa-solid fa-house"></i> Inicio  <!--Icono de la casilla-->             
+                </a>
+            </div>
+            <div>
+                <a href="../discografia/formulario.html"> <!--Enlace al formulario-->
+                    <i class="fa-solid fa-pen-to-square"></i> Formulario <!--Icono de la casilla-->
+                </a>
+            </div>
+            <div>     
+                <a href="../discografia/discografia.html"> <!--Enlace al discografia-->
+                    <i class="fa-solid fa-compact-disc"></i> Discografía <!--Icono de la casilla-->
+                </a>
+            </div>
+        </nav>
+    </header>
+         <!-- Contenedor principal del formulario -->
+    <div class="form-container">
+
+        <!-- Título de la página -->
+        <h2>Formulario de The Weeknd</h2>
+
+        <!-- FORMULARIO -->
+        <form action="#" method="POST"> <!--Formulario-->
+
+            <!-- Campo de nombre (texto normal) -->
+            <label for="nombre">Nombre:</label><!-- Etiqueta-->
+            <input type="text" id="nombre" name="nombre" required> <!--Campo de texto-->
+
+            <!-- Campo de apellidos -->
+            <label for="apellidos">Apellidos:</label><!-- Etiqueta-->
+            <input type="text" id="apellidos" name="apellidos" required> <!-- Esto es el campo de texto-->
+
+            <!-- Campo de edad (tipo number con límites) -->
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="120" required> <!-- Esto es el campo de número-->
+
+            <!-- Selector de país -->
+            <label for="pais">País:</label><!-- Etiqueta-->
+            <select id="pais" name="pais" required><!-- Esto es el selector-->
+                <option value="">Selecciona un país</option> <!-- Opción de primero-->
+                <option value="España">España</option>
+                <option value="México">México</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Chile">Chile</option>
+                <option value="Perú">Perú</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <!-- Campo de correo electrónico -->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Selector múltiple de intereses -->
+            <label for="intereses">Intereses musicales:</label>
+            <select id="intereses" name="intereses" multiple size="4">
+                <option value="Nuevos lanzamientos">Nuevos lanzamientos</option>
+                <option value="Conciertos">Conciertos</option>
+                <option value="Merch oficial">Merch oficial</option>
+                <option value="Noticias del artista">Noticias del artista</option>
+            </select>
+
+            <!-- Botón de enviar -->
+            <button type="submit">Suscribirme</button>
+        </form>
+    </div>
+   
+
+    <section class="footer-section"> <!--Section del footer-->
+        <footer> <!--Formato del footer-->
+            <div>
+            <img src="../img/logo.png" alt="Logo de The Weeknd" class="footer-logo"> <!--Logo del footer-->
+
+            <p>"Alone again, but never lonely."</p> <!--Breve texto del footer-->
+
+            <p class="footer-copy">© 2025 Fanpage de The Weeknd | Creado por Alexandra Rivas Jiménez</p> <!--texto del footer con un estilo en css-->
+            </div>
+        </footer>
+    </section>
 </body>
 </html>

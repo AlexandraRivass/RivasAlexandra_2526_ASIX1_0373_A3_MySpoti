@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySpoty</title>
-
+        <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./img/logo.png">
     <style>
         /* */
         * {
@@ -14,7 +16,13 @@
         }
 
         body {
-            background-color: rgb(214, 179, 243);
+            background-color: rgb(152, 128, 172);
+            font-family: 'Poppins', sans-serif;
+        }
+        header{
+            background-color: #5d2e67;
+            padding: 3%;
+            color: aliceblue;
         }
 
         .container{
@@ -25,23 +33,45 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: 62vh;
+            height: 90vh;
             color: white; /* Color texto blanco */
+            
 
         }
         .container1{
             margin-right: 10%;
             margin-left: 10%;
         }
-        .container3{
+        .container3 {
             display: flex;
-            text-align: center;
-        
+            margin-right: 10%;
+            margin-left: 10%;
+            justify-content: center;
+            
+        }
+        .container3 div{
+            margin: 30px; /*Margen*/
+        }
+        .display{
+            display: flex;
+        }
+        .imagen1{
+            width: 100%;
+            margin-top: 11%;
+            
         }
         .imagenes{
-            width: 120px;
-            height: 120px;
+            width: 300px;
+            height: 250px;
+            box-shadow: 0 0 15px #5d5285, 0 0 30px #440b52;
+
         }
+        .imagen{
+            width: 700px;
+            height: 150px;
+            box-shadow: 0 0 10px #ffffff, 0 0 20px #fcfafa;
+        }
+
         .titulo{
             font-size: 2em;
             text-align: center;
@@ -54,9 +84,84 @@
             font-size: 2em; /* Para agrandar el texto*/
         }
 
+
+        header {
+            background-color: #170218; /* color de fondo*/
+            padding: 10px 0; /* padding es para el espacio entre el header y el contenido*/
+            }
+
+        nav {
+            display: flex; /* Display fles es para organizar los elementos en una fila*/
+            justify-content: center; /* Justificación centrada*/
+            gap: 25px; /* gap es para el espacio entre los elementos*/
+        }
+
+        nav a {
+            color: white; /* color de texto*/
+            text-decoration: none; /* Sin underline*/
+            font-weight: 500;   /* peso del texto*/
+            font-size: 1rem;    /* tamaño del texto*/
+            display: flex;      /* display fles es para organizar los elementos en una fila*/
+            align-items: center;    /* Alineación centrada*/
+            gap: 8px;           /* gap es para el espacio entre los elementos*/
+            background-color: #4C1560;   /* color de fondo*/
+            padding: 10px 18px;         /* padding es para el espacio entre el header y el contenido*/
+            border-radius: 8px; /*Contorno el borde de la imagen*/
+            transition: all 0.3s ease;   /* transición de color*/
+        }
+
+        nav a:hover {
+            background-color: #311f5c;   /* color de fondo*/
+            transform: scale(1.05);      /* Transformación*/
+        }
+        .footer-section{
+            background-color: black; /*Color de fondo del footer*/
+            color: white; /*Color de texto del footer*/
+            text-align: center; /*Alineación del texto del footer*/
+        }
+        footer{
+            padding: 3% 3% 3% 3%; /*Margen del footer*/
+            margin-top: 1%;    /*Margen del footer*/
+        }
+
+        .footer-logo {
+            width: 100px; /*Ancho del logo del footer*/
+        }
+
+        .footer-logo:hover {
+            transform: scale(1.1); /*Transformación del logo del footer*/
+            
+        }
+        .footer-copy {
+            color: #777; /*Color de texto del footer*/
+            font-size: 0.9rem; /*Tamaño del texto del footer*/
+            margin-top: 10px; /*Margen del texto del footer*/
+        }
+
     </style>
 </head>
 <body>
+    <header><!--Formato del header-->
+        <nav><!--Formato del navegador-->
+            <!-- A hreef se usa para que el navegador navegue a la página enlazada -->
+            <div>
+                <a href="./index.html"> <!--Enlace al index-->
+                    <i class="fa-solid fa-house"></i> Inicio  <!--Icono de la casilla-->             
+                </a>
+            </div>
+            <div>
+                <a href="./discografia/formulario.html"> <!--Enlace al formulario-->
+                    <i class="fa-solid fa-pen-to-square"></i> Formulario <!--Icono de la casilla-->
+                </a>
+            </div>
+            <div>     
+                <a href="./discografia/discografia.html"> <!--Enlace al discografia-->
+                    <i class="fa-solid fa-compact-disc"></i> Discografía <!--Icono de la casilla-->
+                </a>
+            </div>
+        </nav>
+    </header>
+
     <div class="container">
         <div class="left">
             <div>
@@ -65,7 +170,7 @@
         </div>
 
         <div class="right"> 
-            <img src="./img/fondo_weekend.png">             
+            <img  class="imagen1" src="./img/fondo_weekend.png">             
         </div>
     </div>
 
@@ -78,39 +183,49 @@
             <br>
         </div>
 
-        <div>
+        <div class="display">
             <p>
-                <b>Abel Makkonen Tesfaye</b>, conocido artísticamente como <b><em>The Weeknd</em></b>, es uno de los <b>artistas más influyentes del pop contemporáneo</b>.
-                Nacido en <b>Toronto en 1990</b>, comenzó su carrera en <em>2009</em> publicando música de forma anónima en <em>YouTube</em>.
+                <b>Abel Makkonen Tesfaye</b>, conocido artísticamente como <b><em>The Weeknd</em></b>, es uno de los <b>artistas más influyentes del pop contemporáneo</b>.<br>
+                Nacido en <b>Toronto en 1990</b>, comenzó su carrera en <em>2009</em> publicando música de forma anónima en <em>YouTube</em>. <br>
                 En <em>2011</em> lanzó <b>tres mixtapes</b> que redefinieron el <em>R&B alternativo</em>: <b><em>House of Balloons</em></b>, <b><em>Thursday</em></b> y <b><em>Echoes of Silence</em></b>, más tarde recopilados en <b><em>Trilogy (2012)</em></b>.
                 Su <b>estilo oscuro, introspectivo y emocional</b> lo convirtió en un <b>fenómeno global</b>.
             </p>
-
+                <img class="imagen" src="./img/foto3_weeknd.png">
+        </div>
             <br>
-
+        <div>
             <p>
                 En <em>2013</em> debutó con <b><em>Kiss Land</em></b>, seguido por el exitoso <b><em>Beauty Behind the Madness (2015)</em></b>, que incluyó los hits <em>Can’t Feel My Face</em> y <em>The Hills</em>.
                 Con <b><em>Starboy (2016)</em></b>, en colaboración con <em>Daft Punk</em>, consolidó su estatus como <b>superestrella internacional</b>.
                 En <em>2020</em>, <b><em>After Hours</em></b> mostró su faceta más <em>cinematográfica y melancólica</em>, mientras que <b><em>Dawn FM (2022)</em></b> exploró el <em>synth-pop</em> con una <em>estética retro-futurista</em>.
                 En <em>2025</em>, <b><em>The Weeknd</em></b> sorprendió de nuevo con su disco <b><em>Hurry Up Tomorrow</em></b>.
             </p>
-            <br>
-        </div>
-
-        <div class="container3">
-            <div>
-                <img class="imagenes" src="./img/icono_de_discografia.png"> 
-                <br><a href="./discografia/discografia.html">Discografia</a>
-            </div>
-
-            <div>
-                <img class="imagenes" src="./img/icono_de_formulario.png">
-                <br><a href="./discografia/formulario.html">Formulario</a>
-            </div>
         </div>
 
 
     </div>
 
+    <section class="container3">
+        <div>
+            <img class="imagenes" src="./img/foto_weeknd.jpg"> 
+        </div>
+        <div>
+            <img class="imagenes" src="./img/foto2_weeknd.jpg">
+        </div>
+
+    </section>
+
+
+    <section class="footer-section"> <!--Section del footer-->
+        <footer> <!--Formato del footer-->
+            <div>
+            <img src="./img/logo.png" alt="Logo de The Weeknd" class="footer-logo"> <!--Logo del footer-->
+
+            <p>"Alone again, but never lonely."</p> <!--Breve texto del footer-->
+
+            <p class="footer-copy">© 2025 Fanpage de The Weeknd | Creado por Alexandra Rivas Jiménez</p> <!--texto del footer con un estilo en css-->
+            </div>
+        </footer>
+    </section>
 </body>
 </html>

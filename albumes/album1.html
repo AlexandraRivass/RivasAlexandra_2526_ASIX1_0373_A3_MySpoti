@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../img/logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(152, 128, 172);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: #170218; /* color de fondo*/
+            padding: 10px 0; /* padding es para el espacio entre el header y el contenido*/
+        }
+
+        nav {
+            display: flex; /* Display fles es para organizar los elementos en una fila*/
+            justify-content: center; /* Justificación centrada*/
+            gap: 25px; /* gap es para el espacio entre los elementos*/
+        }
+
+        nav a {
+            color: white; /* color de texto*/
+            text-decoration: none; /* Sin underline*/
+            font-weight: 500;   /* peso del texto*/
+            font-size: 1rem;    /* tamaño del texto*/
+            display: flex;      /* display fles es para organizar los elementos en una fila*/
+            align-items: center;    /* Alineación centrada*/
+            gap: 8px;           /* gap es para el espacio entre los elementos*/
+            background-color: #4C1560;   /* color de fondo*/
+            padding: 10px 18px;         /* padding es para el espacio entre el header y el contenido*/
+            border-radius: 8px; /*Contorno el borde de la imagen*/
+            transition: all 0.3s ease;   /* transición de color*/
+        }
+
+        nav a:hover {
+            background-color: #311f5c;   /* color de fondo*/
+            transform: scale(1.05);      /* Transformación*/
+        }
+    
+        .container{
+            text-align: center; /* centro del texto*/
+            justify-content: center;
+            align-items: center;
+            margin-right: 10%;
+            margin-left: 10%;
+
+        }
+        .container2{
+            margin-left: 27%;
+        }
+ 
+        .imagenes{
+            width: 300px;
+            height: 300px;    
+            box-shadow: 0 0 10px #8c14b1, 0 0 20px #5c2d99;
+
+        }
+
+        .footer-section{
+            background-color: black; /*Color de fondo del footer*/
+            color: white; /*Color de texto del footer*/
+            text-align: center; /*Alineación del texto del footer*/
+        }
+        footer{
+            padding: 3% 3% 3% 3%; /*Margen del footer*/
+            margin-top: 1%;    /*Margen del footer*/
+        }
+
+        .footer-logo {
+            width: 100px; /*Ancho del logo del footer*/
+        }
+
+        .footer-logo:hover {
+            transform: scale(1.1); /*Transformación del logo del footer*/
+            
+        }
+        .footer-copy {
+            color: #777; /*Color de texto del footer*/
+            font-size: 0.9rem; /*Tamaño del texto del footer*/
+            margin-top: 10px; /*Margen del texto del footer*/
+        }
+        .container2 {
+            max-width: 800px;              /* limita el ancho de la tabla */
+            margin: 40px auto;             /* centra la tabla horizontalmente */
+            padding: 20px;
+            background-color: #111;        /* fondo oscuro estilo The Weeknd */
+            border-radius: 12px;           /* bordes redondeados */
+            box-shadow: 0 0 15px rgba(138, 46, 75, 0.3); /* sombra con tono rojizo */
+        }
+
+        /* Estilo general de la tabla */
+        .music-table {
+            width: 100%;
+            border-collapse: collapse;     /* elimina espacios entre celdas */
+            color: #fff;                   /* texto blanco */
+            
+        }
+
+        /* Encabezado de la tabla */
+        .music-table th {
+            background-color: #e50914;     /* rojo oscuro para el encabezado */
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Filas de la tabla */
+        .music-table td {
+            padding: 10px;
+            border-bottom: 1px solid #333; /* línea divisoria entre filas */
+        }
+
+    </style>
+</head>
+<body>
+    <header><!--Formato del header-->
+        <nav><!--Formato del navegador-->
+            <!-- A hreef se usa para que el navegador navegue a la página enlazada -->
+            <div>
+                <a href="../index.html"> <!--Enlace al index-->
+                    <i class="fa-solid fa-house"></i> Inicio  <!--Icono de la casilla-->             
+                </a>
+            </div>
+            <div>
+                <a href="../discografia/formulario.html"> <!--Enlace al formulario-->
+                    <i class="fa-solid fa-pen-to-square"></i> Formulario <!--Icono de la casilla-->
+                </a>
+            </div>
+            <div>     
+                <a href="../discografia/discografia.html"> <!--Enlace al discografia-->
+                    <i class="fa-solid fa-compact-disc"></i> Discografía <!--Icono de la casilla-->
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>The Weeknd - Álbumes</h1>
+
+        <!-- Álbum Starboy -->
+        <h2>Starboy (2016)</h2><br>
+        <a href="../discografia/discografia.html">
+            <img class="imagenes" src="../img/album1.jpg" alt="Album Starboy">
+        </a>
+    </div>
+
+    <div class="container2">
+        <!-- Contenedor general de la tabla -->
+        <table class="music-table">
+            <thead>
+                <!-- Encabezado de la tabla -->
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th>Duración</th>
+                    <th>Reproductor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Fila 1 -->
+                <tr>
+                    <td>1</td><!-- Número de la fila -->
+                    <td>Starboy (feat. Daft Punk)</td><!-- Título de la canción -->
+                    <td>3:50</td><!-- Duración de la canción -->
+                    <td>
+                        <audio controls><!-- Controles de reproducción -->
+                            <source src="../mp3/starboy.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+                <!-- Fila 2 -->
+                <tr>
+                    <td>2</td><!-- Número de la fila -->
+                    <td>Party Monster</td><!-- Título de la canción -->
+                    <td>4:09</td>
+                    <td>
+                        <audio controls><!-- Controles de reproducción -->
+                            <source src="../mp3/partymonster.mp3" type="audio/mpeg"> <!-- Archivo mp3 -->
+                        </audio>
+                    </td>
+                </tr>
+                <!-- Fila 3 -->
+                <tr>
+                    <td>3</td><!-- Número de la fila -->
+                    <td>False Alarm</td><!-- Título de la canción -->
+                    <td>3:40</td><!-- Duración de la canción -->
+                    <td>
+                        <audio controls><!-- Controles de reproducción -->
+                            <source src="../mp3/falsealarm.mp3" type="audio/mpeg"><!--Archivo mp3  -->
+                        </audio>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <section class="footer-section"> <!--Section del footer-->
+        <footer> <!--Formato del footer-->
+            <div>
+            <img src="../img/logo.png" alt="Logo de The Weeknd" class="footer-logo"> <!--Logo del footer-->
+
+            <p>"Alone again, but never lonely."</p> <!--Breve texto del footer-->
+
+            <p class="footer-copy">© 2025 Fanpage de The Weeknd | Creado por Alexandra Rivas Jiménez</p> <!--texto del footer con un estilo en css-->
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
