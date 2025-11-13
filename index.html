@@ -16,31 +16,31 @@
         }
 
         body {
-            background-color: rgb(152, 128, 172);
-            font-family: 'Poppins', sans-serif;
+            background-color: rgb(152, 128, 172);   /* color de fondo */
+            font-family: 'Poppins', sans-serif;     /* fuente de letra */
         }
         header{
-            background-color: #5d2e67;
-            padding: 3%;
+            background-color: #5d2e67;         /* color de fondo */ 
+            padding: 3%;                      /* padding */
             color: aliceblue;
         }
 
         .container{
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/fondo_pagina.jpg");
-            background-position: center center;
-            background-repeat: no-repeat;
+            grid-template-columns: 1fr 1fr;     /* 2 columnas */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/fondo_pagina.jpg");   /* fondo de la imagen */
+            background-position: center center; /* posicion centrada */
+            background-repeat: no-repeat;       /* no repetir */
             background-size: cover;
             width: 100%;
-            height: 90vh;
+            height: 88vh;
             color: white; /* Color texto blanco */
             
 
         }
         .container1{
-            margin-right: 10%;
-            margin-left: 10%;
+            margin-right: 10%;                  /* margen derecho */
+            margin-left: 10%;                   /* margen izquierdo */
         }
         .container3 {
             display: flex;
@@ -63,17 +63,17 @@
         .imagenes{
             width: 300px;
             height: 250px;
-            box-shadow: 0 0 15px #5d5285, 0 0 30px #440b52;
+            box-shadow: 0 0 15px #5d5285, 0 0 30px #440b52;   /* sombra rojiza */
 
         }
         .imagen{
             width: 700px;
             height: 150px;
-            box-shadow: 0 0 10px #ffffff, 0 0 20px #fcfafa;
+            box-shadow: 0 0 10px #ffffff, 0 0 20px #fcfafa;   /* sombra rojiza */
         }
 
         .titulo{
-            font-size: 2em;
+            font-size: 2em; /* atamaño de letraa */
             text-align: center;
         }
         
@@ -170,7 +170,7 @@
         </div>
 
         <div class="right"> 
-            <img  class="imagen1" src="./img/fondo_weekend.png">             
+            <img  class="imagen1" src="./img/fondo_weekend.png" alt="iamgen">             
         </div>
     </div>
 
@@ -190,7 +190,7 @@
                 En <em>2011</em> lanzó <b>tres mixtapes</b> que redefinieron el <em>R&B alternativo</em>: <b><em>House of Balloons</em></b>, <b><em>Thursday</em></b> y <b><em>Echoes of Silence</em></b>, más tarde recopilados en <b><em>Trilogy (2012)</em></b>.
                 Su <b>estilo oscuro, introspectivo y emocional</b> lo convirtió en un <b>fenómeno global</b>.
             </p>
-                <img class="imagen" src="./img/foto3_weeknd.png">
+                <img class="imagen" src="./img/foto3_weeknd.png" alt="imagen">
         </div>
             <br>
         <div>
@@ -205,18 +205,18 @@
 
     </div>
 
-    <section class="container3">
+    <div class="container3">
         <div>
-            <img class="imagenes" src="./img/foto_weeknd.jpg"> 
+            <img class="imagenes" src="./img/foto_weeknd.jpg" alt="imagen"> 
         </div>
         <div>
-            <img class="imagenes" src="./img/foto2_weeknd.jpg">
+            <img class="imagenes" src="./img/foto2_weeknd.jpg" alt="Imagen">
         </div>
 
-    </section>
+    </div>
 
 
-    <section class="footer-section"> <!--Section del footer-->
+    <div class="footer-section"> <!--Section del footer-->
         <footer> <!--Formato del footer-->
             <div>
             <img src="./img/logo.png" alt="Logo de The Weeknd" class="footer-logo"> <!--Logo del footer-->
@@ -226,6 +226,6 @@
             <p class="footer-copy">© 2025 Fanpage de The Weeknd | Creado por Alexandra Rivas Jiménez</p> <!--texto del footer con un estilo en css-->
             </div>
         </footer>
-    </section>
+    </div>
 </body>
 </html>
